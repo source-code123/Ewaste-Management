@@ -1,0 +1,72 @@
+<html>
+<head>
+	<title> WASTE MANAGEMENT </title>
+	<link rel="stylesheet"href="style.css">
+	<script type="text/javascript">
+		function check()
+		{
+			var a = document.forms["frm"]["name"].value;
+			var b = document.forms["frm"]["email"].value;
+			var c = document.forms["frm"]["password"].value;
+			var d = document.forms["frm"]["mobile"].value;
+			
+			if(a == "" || b == "" || c == "" || d == "")
+			{
+				alert("Please fill the required fields...");
+				return false;
+			}
+		}
+	</script>
+<style type="text/css">
+#outer
+{
+	height: 600px;
+	width: 1000px;
+	margin:0px auto;
+	border: 1px solid;
+	/*background-image:url(images\Wood-Texture-Welcome-Image.jpg);*/
+
+}
+
+#index
+{
+	height:400px;
+	width:220px;
+	opacity: 0.8;
+	margin-left: 570px;
+	margin-top: 80px;
+	background-color: black;
+}
+.a
+{
+	height: 40px;
+	width: 180px;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+</style>
+
+</head>
+<body>
+	<header>
+		<nav>
+			<h1>WASTE MANAGEMENT</h1>
+			
+		</nav>
+	</header>
+	<div class="divider"></div>
+	<div class="fwimage1"></div>
+	<center>
+	<div id="form" >
+		<form name="frm" action="php/register.php" method="post" onsubmit="return check()"></br>
+			<input class="a" type="text" name="name" placeholder="enter your name"/></br>
+			<br><input class="a" type="email" name="email" placeholder="enter your email"/></br>
+			<br><input class="a" type="password" name="password" placeholder="enter your password"/></br>
+			<br><input class="a" type="number" name="mobile" placeholder="enter your mobile" maxlength="10" /></br>
+			<input  class="a" type="submit"  value="REGISTER" name="submit"/>
+		</form>
+	</div>
+	<center>
+</body>
+</html>
